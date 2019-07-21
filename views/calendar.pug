@@ -1,0 +1,41 @@
+extends layout
+
+block nav
+  .topnav
+      a(href='/') Home
+      a(href='/about') About Us
+      a.active(href='/calendar') Calendar
+      a(href='/contact') Contact
+
+block content
+  link(rel='stylesheet', href='/stylesheets/calendar.css')
+  h1= title
+  .container
+      table
+        thead
+          tr
+            th Date
+            th Location
+            th Time Control
+            th Entry Fee
+        tbody
+          tr
+            td August 2nd
+            td Domino&apos;s 7th Ave.
+            td G/25;d5
+            td $10 adults / $5 kids
+          tr
+            td August 21st
+            td Your Pie
+            td TBD
+            td $10 adults / $5 kids
+          tr
+            td September 13th
+            td Domino&apos;s 7th Ave
+            td TBD
+            td $10 adults / $5 kids
+          tr
+            td September 18th
+            td Your Pie
+            td TBD
+            td $10 adults / $5 kids

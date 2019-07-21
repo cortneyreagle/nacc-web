@@ -1,0 +1,12 @@
+extends layout
+
+block nav
+  .topnav
+      a.active(href='/') Home
+      a(href='/about') About Us
+      a(href='/calendar') Calendar
+      a(href='/contact') Contact
+
+block content
+  h1= title
+  p Welcome to #{title}
